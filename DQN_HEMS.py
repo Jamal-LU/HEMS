@@ -182,5 +182,4 @@ for nb_epoch in range (nb_epsiode):
     if done:
       break
   step_.append(total_reward)
-  print(' total reward: ', total_reward, ' epsilion: ', epsilion, 'number of steps: ', step)
   torch.save(DQN_model.nn.state_dict(), 'DDQN_clippng_1.pth')
